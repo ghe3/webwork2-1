@@ -431,7 +431,9 @@ clear: both;
  * it is emitted by WW code in ProblemSet.pl (not in system.template) ! */
 #InfoPanel {
     font-size:100%;
-	max-width: 100%;
+	float: right;
+	max-width: 40%;
+	min-width: 0;
 	overflow: auto;
 	/*margin-right: -1px;*/
 	background-color: #fff;
@@ -714,7 +716,7 @@ span.gray_button{
 	width: 100%;
 }
 
-Styles specifically for the problem viewer
+/*Styles specifically for the problem viewer*/
 
 #problem_viewer_form{
 	margin-left: 10px;
@@ -788,7 +790,7 @@ Styles specifically for the problem viewer
     left: 785px;
     position: absolute;
     top: 182px;
-    width: 500px;
+    width: 50%;
 	overflow: scroll;
 }
 
@@ -824,10 +826,15 @@ div.problem_sets_options {
 /*This is the styling specifically for the tables of problems displayed for each problem set page*/
 table.problem_set_table{
 	margin-top: 30px;
-	width: 640px;
-	text-align: center;
+	#width: 640px;
+	text-align: left;
 }
-
+table.problem_set_table th{
+	padding-right: 30px;
+}
+table.problem_set_table td{
+	padding-right: 30px;
+}
 /*BUG FIXES*/
 
 table#grades_table pre{
